@@ -1,0 +1,30 @@
+import type { NavItem } from "@/types";
+
+// Foundation nav items. Future modules push additional entries into this array.
+export const NAV_ITEMS: NavItem[] = [
+  { label: "Dashboard", labelKey: "nav.dashboard", href: "/dashboard", icon: "LayoutDashboard" },
+  { label: "Students", labelKey: "nav.students", href: "/students", icon: "GraduationCap", permission: "students.view" },
+  { label: "Teachers", labelKey: "nav.teachers", href: "/teachers", icon: "Presentation", permission: "teachers.view" },
+  { label: "Classes & Sections", labelKey: "nav.classes", href: "/classes", icon: "Layers", permission: "classes.view" },
+  { label: "Subjects", labelKey: "nav.subjects", href: "/subjects", icon: "BookOpen", permission: "subjects.view" },
+  { label: "Timetable", labelKey: "nav.timetable", href: "/timetable", icon: "CalendarDays", permission: "timetable.view" },
+  { label: "Assignments", labelKey: "nav.assignments", href: "/assignments", icon: "ClipboardCheck", permission: "assignments.view" },
+  { label: "Attendance", labelKey: "nav.attendance", href: "/attendance", icon: "CalendarCheck", permission: "attendance.view" },
+  { label: "Exams", labelKey: "nav.exams", href: "/exams", icon: "ClipboardList", permission: "exams.view" },
+  { label: "Results", labelKey: "nav.results", href: "/results", icon: "Trophy", permission: "results.view" },
+  { label: "Fees & Finance", labelKey: "nav.fees", href: "/fees", icon: "Wallet", permission: "student-fees.view" },
+  { label: "HR & Staff", labelKey: "nav.hr", href: "/hr", icon: "Briefcase", permission: "employees.view" },
+  { label: "Payroll", labelKey: "nav.payroll", href: "/payroll", icon: "Banknote", permission: "payroll.view" },
+  { label: "Library", labelKey: "nav.library", href: "/library", icon: "Library", permission: "books.view" },
+  { label: "Transport", labelKey: "nav.transport", href: "/transport", icon: "Bus", permission: "transport.view" },
+  { label: "Inventory", labelKey: "nav.inventory", href: "/inventory", icon: "Boxes", permission: "inventory-items.view" },
+  { label: "Messages", labelKey: "nav.messages", href: "/messages", icon: "MessageSquare", permission: "messages.view" },
+  { label: "Announcements", labelKey: "nav.announcements", href: "/announcements", icon: "Megaphone", permission: "announcements.view" },
+  { label: "Events", labelKey: "nav.events", href: "/events", icon: "CalendarRange", permission: "events.view" },
+  { label: "Users", labelKey: "nav.users", href: "/users", icon: "Users", permission: "users.view" },
+  { label: "Roles", labelKey: "nav.roles", href: "/roles", icon: "ShieldCheck", permission: "roles.view" },
+  { label: "Permissions", labelKey: "nav.permissions", href: "/permissions", icon: "KeyRound", permission: "permissions.view" },
+  { label: "Settings", labelKey: "nav.settings", href: "/settings", icon: "Settings", permission: "settings.view" },
+  { label: "Audit Logs", labelKey: "nav.auditLogs", href: "/audit-logs", icon: "FileClock", permission: "audit-logs.view" },
+  { label: "Activity Logs", labelKey: "nav.activityLogs", href: "/activity-logs", icon: "Activity", permission: "activity-logs.view" },
+];
